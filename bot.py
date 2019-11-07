@@ -37,9 +37,8 @@ def handle(msg):
 		#closing database connection.
 		if(conn):
 			cur.close()
+			print("PostgreSQL cursore is closed")
 			#conn.close()
-			print("PostgreSQL connection is closed")
-
 bot.message_loop(handle)
 
 print ('Listening ...')
