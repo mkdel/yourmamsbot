@@ -5,10 +5,11 @@ import urllib3
 import time
 import secrets
 import psycopg2
+#from importlib import reload
 
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+#import sys
+#reload(sys)
+#sys.setdefaultencoding('utf8')
 
 print('\nConnecting to database')
 conn = psycopg2.connect(host="localhost",database="yourmamsbot", user="yourmamsbot", password="yourmamsbot")
